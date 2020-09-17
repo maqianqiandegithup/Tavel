@@ -4,7 +4,7 @@
       <div class="iconfont back-icon">&#xe624;</div>
     </div>
     <div class="header-middle">
-      <input type="text" class="iconfont header-input" :placeholder='"\ue632"+" 输入城市/景点/游玩主题"' />
+      <input type="text" class="header-input" :placeholder='"\ue632"+" 输入城市/景点/游玩主题"' />
     </div>
     <router-link to="/city">
       <div class="header-right">
@@ -47,7 +47,12 @@ export default {
             border-radius .1rem
             width:calc(100% - .2rem);
             display:inline-block;  
-            border none
+            border 1px solid #cccccc
+            padding-left 10px  //调节指针光标的位置
+            &:hover
+              border 1px solid blue
+            &:focus
+              border 1px solid red
       .header-right
         min-width 1.04rem
         float right
