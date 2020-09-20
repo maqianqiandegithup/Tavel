@@ -1,20 +1,30 @@
 <template>
-    <div class="swiper">
-        
-    </div>
+  <div class="swiper">
+    <slide-show :slideList="swiperList"></slide-show>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: '',
-        data() {
-            return {
-                
-            }
+import slideShow from "common/slideSwiper";
+
+export default {
+  name: "Swiper",
+  data() {
+    return {
+    };
+  },
+  props: {
+    swiperList: {
+        type:Array,
+        default () {
+            return []
         }
-    }
+    },
+  },
+  components: {
+    slideShow,
+  },
+};
 </script>
 
-<style lang="stylus" scoped>
-    
-</style>
+<style lang="stylus" scoped></style>
