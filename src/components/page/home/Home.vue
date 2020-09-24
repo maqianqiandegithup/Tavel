@@ -2,17 +2,23 @@
   <div>
     <home-header></home-header>
     <swiper :swiperList="swiperList"></swiper>
+    <recommend :list="recommendList"></recommend>
+    <weekend></weekend>
   </div>
 </template>
 <script>
 import HomeHeader from "./components/Header";
 import Swiper from "./components/Swiper"
+import Recommend from "./components/Recommend"
+import Weekend from "./components/Weekend"
 import index from "static/mock/index";
 export default {
   name: "Home",
   components: {
     HomeHeader,
-    Swiper
+    Swiper,
+    Recommend,
+    Weekend
   },
   data() {
     return {

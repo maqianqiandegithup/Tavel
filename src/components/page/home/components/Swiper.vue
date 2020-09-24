@@ -27,4 +27,9 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+   @import '~styles/varible.styl'
+   .swiper{
+       height $swiperHeight
+   }
+   </style>

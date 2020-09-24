@@ -71,7 +71,7 @@ export default {
 <style lang="stylus" scoped>
 .slide-show {
   width: 100%;
-  height: 500px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   .slide-box img {
